@@ -7,15 +7,15 @@ import { connect } from "react-redux";
 class Home extends React.Component {
 render(){
 
-  const {lists} = this.props;
+  const {users} = this.props;
 
-  //console.log(this.props);
+  console.log(this.props);
 
   return (
     <div className="container">
       <div className="row">
         <div className="col-sm">
-          <ListResults lists={lists}/>
+          <ListResults users={users}/>
         </div>
       </div>
     </div>
@@ -25,7 +25,7 @@ render(){
 
 const mapStateToProps = (state)=> {
   return {
-    lists : state.list.lists
+    users : state.user.users
   }
 }
 

@@ -1,11 +1,11 @@
 import React from "react";
 
-function SinglResults({ list }) {
+function SinglResults({ user }) {
   return (
     <div>
       <h1>Korisnici</h1>
-      <h2>{list.imeiprezime}</h2>
-      <h2>{list.godina} Godina</h2>
+      <h2>{user.imeiprezime}</h2>
+      <h2>{user.godina} Godina</h2>
       <hr />
       <br />
     </div>

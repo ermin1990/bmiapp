@@ -2,13 +2,13 @@ import React from "react";
 import SingleResult from './SinglResults'
 
 
-const ListResults = ({lists}) => {
+const ListResults = ({users}) => {
       
   return (
     <div className="container">
-      {lists && lists.map(list=>{
+      {users && users.map(user=>{
         return (
-          <SingleResult list={list} key={list.id}/>
+          <SingleResult user={user} key={user.id}/>
         )
       })}
     </div>
