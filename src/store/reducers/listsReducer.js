@@ -5,7 +5,6 @@ const initState = {
         {id: '3', imeiprezime:'Amina Halilovic', visina: '162', godina: '27', tezina: '52'}
     ],
 }
-
 const listsReducer = (state = initState, action) =>{
     return state;
 }
