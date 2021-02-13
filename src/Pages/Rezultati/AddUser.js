@@ -14,11 +14,8 @@ class AddUser extends React.Component {
 
   handleChange = (e) => {
     this.setState({
-      
       [e.target.id]: e.target.value
-      
     })
-    console.log(this.state);
   }
   handleSubmit = (e) => {
     e.preventDefault();

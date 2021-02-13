@@ -23,11 +23,18 @@ const initState = {
     },
   ],
 };
+
+
 const listsReducer = (state = initState, action) => {
   switch (action.type) {
-    case "ADD_USER":
+    case 'ADD_USER':
       console.log("Creiran novi user", action.users);
       return state;
+
+      case 'ADD_USER_ERROR':
+          console.log('Add user Error', action.err);
+          return state;
+
     default:
       return state;
   }
